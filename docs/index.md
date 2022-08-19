@@ -7,7 +7,7 @@ O sumário do curso vai a seguir:
 
 1. [Introdução](intro.md)
 
-2. [Características da linguagem](caracteristicasLinguagem.md)
+2. [Características da linguagem](caracteristicasLInguagem.md)
 
 3. [Modelo de execução](modeloExecucao)
 
