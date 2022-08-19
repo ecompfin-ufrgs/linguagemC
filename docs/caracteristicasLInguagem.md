@@ -19,6 +19,8 @@ contendo preferencialmente por caracteres ASCII, embora haja
 suporte para caracteres UTF-8 no padrão mais recente para os sistemas
 operacionais de computadores pessoais.
 
+Os arquivos-fonte podem terão a extensão *.C* e os arquivos cabeçalhos terão extensão *.h*.
+
 Os seguintes duplas de caracteres, denominadas sequências de escape estão
 disponíveis para controlar o local de impressão dos caracteres:
 
