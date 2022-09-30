@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+<h2>Linguagem C</h2>
+
+<h3>Léxico</h3>
+
+<p>O léxico da linguagem C é formado por caracteres ASCII.</p>
+
+<h3>Comentários</h3>
+
+Comentários de linha única são denotados por // e comentários de múltiplas
+linhas por /* comentário */.
+
+<h3>Identificadores</h3>
+São iniciados por letras maiúsculas ou minúsculas ou sublinhado.  Não se pode
+usar @, $ ou %.
+
+
+
+
+
+
+<h3>Modelo de dados</h3>
+
+Os endereços de memória onde os dados estão armazenados são os objetos
+manipulados por C.  C atribui a esses endereços tipos que caracterizam o 
+conjunto de valores que podem ser nele armazenados bem como as operações
+que podem ser com eles realizadas.
+
+
+Há muito pouca abstração para o hardware e, por isso, cabe ao programador
+gerenciar a memória do programa de modo a garantir que os dados com os quais o
+programa deverá se lhe dar sejam sempre do tipo definido e caibam no espaço a
+eles destinado.
+
+<h4>Tipos básicos</h4>
+
+Podem ser inteiros ou de ponto flutuante.  
+
+<h5>Tipos inteiros</h5>
+
+<table>
+<tr>
+	<td>char</td>
+	<td>1 byte</td>
+	<td>[-128,127] ou [0,255]</td>
+</tr>
+
+<tr>
+	<td>unsigned char</td>
+	<td>1 byte</td>
+	<td>[0,255]</td>
+</tr>
+
+<tr>
+	<td>signed char</td>
+	<td>1 byte</td>
+	<td>[-128,127]</td>
+</tr>
+
+<tr>
+	<td>int</td>
+	<td>2 ou 4 bytes</td>
+	<td>
+	[-2<sup>15</sup>, 2<sup>15</sup>-1] ou [-2<sup>31</sup>, 2<sup>31</sup>-1]
+	</td>
+</tr>
+
+<tr>
+	<td>unsigned int</td>
+	<td>2 ou 4 bytes</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>short</td>
+	<td>2 bytes</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>unsigned short</td>
+	<td>2 bytes</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>long</td>
+	<td>8 bytes ou (4 bytes OS 32 bits)</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>unsigned long</td>
+	<td>8 bytes</td>
+	<td></td>
+</tr>
+
+
+</table>
+
+<h5>Tipos de ponto flutuante</h5>
+
+<table>
+<tr>
+	<td>float</td>
+	<td>4 bytes</td>
+	<td>[-2<sup>32</sup>,2<sup>32</sup> - 1]</td>
+</tr>
+
+<tr>
+	<td>double</td>
+	<td>8 bytes</td>
+	<td>[-2<sup>64</sup>,2<sup>64</sup> - 1]</td>
+</tr>
+
+
+<tr>
+	<td>long double</td>
+	<td>10 bytes</td>
+	<td>[-2<sup>80</sup>,2<sup>80</sup> - 1]</td>
+</tr>
+
+
+
+</table>
+
+
+
+
+
+<h4>Tipos de enumeração</h4>
+
+Podem ser inteiros ou de ponto flutuante.
+
+<h4>Tipo void</h4>
+O endereço de memória está vazio, isto é, não há qualquer valor associado a ele.
+
+
+<h4>Tipos derivados</h4>
+<ol>
+<li>poiters</li>
+<li>arrays (tipo composto ou agregado)</li>
+<li>struct  (tipo composto ou agregado)</li>
+<li>union</li>
+<li>function - especifica o tipo do retorno da função</li>
+</ol>
+
+
+
+A memória utilizada pelo programa é dividida em duas partes.  Uma parte -
+chamada de <em>stack</em> é usada para para armazenar variáveis locais e as
+funções definidas no programa, tendo, por isso, a necessidade de ter alto
+desempenho de leitura e escrita.  Ao mesmo tempo, esta parte da memória não
+necessita de grande tamanho, costumando variar de 1MB a 8MB a depender do
+sistema operacional e do tradutor (compilador). 
+
+O nome stack decorre de esta parte da memória estar organizada segundo uma
+estrutura de dados de pilha, tendo endereços contíguos definidos estaticamente
+(isto é, em tempo de compilação) pelo tradutor em conjunto com o sistema
+operacional, sendo controlado automaticamente pelo programa por meio de uma
+pequena biblioteca de runtime adicionada a ele pelo tradutor (compilador) e
+pelo próprio sistema operacional.
+
+A outra parte da memória serve para guardar os dados do programa propriamente
+dito, tendo necessidade de ser capaz de armazenar grande quantidade de dados e
+crescer em tempo de execução (isto é, dinamicamente), sendo limitado apenas
+pelo gerenciamento de memória do sistema operacional. Por isso, esta parte tem
+seus endereços espalhados por toda a memória do computador e é gerenciada
+manualmente pelo próprio programador, sendo acessada diretamente por meio de
+seu endereço.  Esta parte da memória é chamada de <em>heap</em>.
+
+
+
+Assim, os objetos (isto é, endereços de memória) manipulados por C estarão no
+stack ou no heap; os objetos no stack são gerenciados automaticamente e os
+objetos no heap são gerenciados pelo programador por meio de funções oferecidas
+por C. 
+  
+<h3>Modelo de execução: estrutura do programa e sua tradução</h3>
+
+
+C possui um modelo de execução sequencial de tarefa única (single thread).  Há,
+porém, extensões para a linguagem por meio de bibliotecas que a capacitam à
+execução concorrente por meio de threads (pthread/openmp) ou processos (mpi).
+
+Um programa C pode ser composto por dois tipos de arquivos: arquivos de
+cabeçalho e arquivos de código.  Os arquivos de cabeçalho provêem instruções
+que informam como os arquivos de código devem ser processados durante o processo
+de tradução (compilação).  Tais instruções de pré-processamento são
+chamadas de <em>macros</em> quando alteram elementos do código-fonte antes da
+tradução ou diretivas de compilação quando apenase ) e são incluídos por meio da instrução
+<pre><code>#include</code></pre> nos arquivos de códigos para que sejame por instruções
+de execução que deverão necessariamente estar contidas
+dentro de subprogramas do tipo função ou procedimento.  Isto caracteriza C como
+uma linguagem que suporta apenas o paradigma procedural.
+
+Os arquivos com o código-fonte são traduzidos individualmente, produzindo
+arquivos com código-objeto que serão ligados num processo chamado de linkedição
+para formar o programa executável.
+
+O código-fonte C é transformado em código-objetA linguagem prevê a existẽncia 
+de um pré-processador de macros, um compilador e
+um 
+
+
+
+<h3> Estrutura do programa</h3>
+
+O programa C é dividido em instruções de pré-processamento e instruções para
+execução.  As instruções para execução devem estar necessariamente 
+
+<pre><code>
+
+#include <stdio.h> // 
+
+int main(int argc, char argv[])
+{
+	// comandos
+	return 0;
+
+}
+
+</code></pre>
+
+
+<h3>O compilador GCC</h3>
+
+Verificando a presença do GCC e sua versão:
+
+<pre><code>
+	gcc -v
+</code></pre>
+</body>
+</html>
