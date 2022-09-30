@@ -27,15 +27,23 @@ usar @, $ ou %.
 
 <h3>Modelo de dados</h3>
 
-Os endereços de memória onde os dados estão armazenados são os objetos
+	<p>
+		Os endereços de memória onde os dados estão armazenados são os objetos
 manipulados por C.  C atribui a esses endereços tipos que caracterizam o 
 conjunto de valores que podem ser nele armazenados bem como as operações
 que podem ser com eles realizadas.
+	</p>
 
 
-Há muito pouca abstração para o hardware e, por isso, cabe ao programador
-gerenciar a memória do programa de modo a garantir que os dados com os quais o
-programa deverá se lhe dar sejam sempre do tipo definido e caibam no espaço a
+<p> O tipo de um objeto (endereço de memória) é estático, isto é, não
+	muda durante todo o tempo de execução.</p>
+
+
+Dizer que os objetos manipulados por C são endereços físicos da memória
+do hardware significa que há muito pouca abstração para o hardware e,
+por isso, em grande parte das vezes, caberá ao programador gerenciar a
+memória do programa de modo a garantir que os dados que o programa
+processa sejam sempre do tipo definido e caibam no espaço a
 eles destinado.
 
 <h4>Tipos básicos</h4>
@@ -144,7 +152,7 @@ O endereço de memória está vazio, isto é, não há qualquer valor associado 
 
 <h4>Tipos derivados</h4>
 <ol>
-<li>poiters</li>
+<li>poiters - *p significa o conteúdo do endereço de memória denominado p</li>
 <li>arrays (tipo composto ou agregado)</li>
 <li>struct  (tipo composto ou agregado)</li>
 <li>union</li>
