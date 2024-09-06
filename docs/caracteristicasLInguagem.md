@@ -11,6 +11,24 @@ A gestão de memória é manual, cabendo ao programador garantir que os dados qu
 
 Quanto às implementações da linguagem C, elas existem para praticamente qualquer plataforma de computação desde os menores microcontroladores até os grandes supercomputadores.  Há inclusive implementações que emitem código para executáveis que rodam diretamente no hardware sem a necessidade de um sistema operacional! Normalmente, a implementação de C é feita por meio de um compilador, porque originalmente a linguagem foi criada para desenvolvimento do sistema operacional Unix, mas existem interpretadores experimentais para C. Aqui utilizaremos para exemplificar nossos códigos o compilador C fornecido pelo Projeto GNU que é conhecido com GCC. 
 
+# Objetos e tipos de dados em C
+
+Os dados manipulados por programas escritos em C são armazenados em segmentos de memória denominados objetos que contém 1 ou mais bytes, ou seja, C é capaz de endereçar bytes de memória, mas não bits.  Ainda assim, existes "hacks", que estão além do escopo destas notas, para se endereçar bits em caso necessário.
+
+O tamanho de cada objeto depende do tipo de dado armazenado.  Note-se que tipo de dado é, por definição, o conjunto ao qual pertece o dado armazenado acompanhado das operações que podem ser realizadas com dados deste conjunto.  C oferece os seguintes tipos de dados primitivos 
+<table>
+<tr>
+<td>Tipo de dado </td>
+<td> Sintaxe </td>
+<td>Tamanho do objeto (em bytes)</td>
+</tr>
+  <tr><td>Caracter</td><td>char</td><td>1</td></tr>
+  <tr><td>Inteiro</td><td>Inteiro</td><td>4</td></tr>
+<\table>
+ [fonte](https://byjus.com/gate/size-of-data-types-in-c/#size-of-primary-data-types)
+
+
+
 # Definição formal
 A linguagem é definida como formada por:
 
