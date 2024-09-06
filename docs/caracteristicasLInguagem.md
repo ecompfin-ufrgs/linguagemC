@@ -16,6 +16,7 @@ Quanto às implementações da linguagem C, elas existem para praticamente qualq
 Os dados manipulados por programas escritos em C são armazenados em segmentos de memória denominados objetos que contém 1 ou mais bytes, ou seja, C é capaz de endereçar bytes de memória, mas não bits.  Ainda assim, existes "hacks", que estão além do escopo destas notas, para se endereçar bits em caso necessário.
 
 O tamanho de cada objeto depende do tipo de dado armazenado.  Note-se que tipo de dado é, por definição, o conjunto ao qual pertece o dado armazenado acompanhado das operações que podem ser realizadas com dados deste conjunto.  C oferece os seguintes tipos de dados primitivos 
+
 <table>
 <tr>
 <td>Tipo de dado </td>
@@ -25,6 +26,7 @@ O tamanho de cada objeto depende do tipo de dado armazenado.  Note-se que tipo d
   <tr><td>Caracter</td><td>char</td><td>1</td></tr>
   <tr><td>Inteiro</td><td>Inteiro</td><td>4</td></tr>
 <\table>
+  
  [fonte](https://byjus.com/gate/size-of-data-types-in-c/#size-of-primary-data-types)
 
 
