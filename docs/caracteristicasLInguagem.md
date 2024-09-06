@@ -1,5 +1,17 @@
-# Características da linguagem
+# Características da linguagem: código-fonte, escopo, gestão de memória e implementações
+C é uma linguagem de programação que dá suporte exclusivamente ao paradigma procedural.  Por isso, seu código-fonte deve estar inserido dentro de funções ou procedimentos, admitindo-se como exceção apenas a parte inicial do código que será usada para inserção de códigos proveniente de bibliotecas externas ou para definições de valores previamente ao início da execução do programa.   Entre todas as funções ou procedimentos do código-fonte C, destaca-se a função que dá início à execução do programa e orienta a execução de todo o programa, que é chamada de função principal.  
 
+O código-fonte de um programa escrito em C deve ser inserido em um arquivo de texto do sistema operacional onde o programa é escrito com extensão .C .  Por exemplo, um programa com nome "hello" teria o arquivo de código-fonte nomeado "hello.c".  Este código-fonte é dividido em trechos denominados de trecho de escopo global e trecho de escopo local. O trecho de escopo global é a primeira parte do código-fonte e manipula os objetos da linguagem que serão armazenados em memória durante todo o tempo de execução do programa, sendo incluído fora de qualquer função e anteriormente à definição da função principal ao passo que o trecho de escopo local está inserido dentro de funções e contém objetos que durarão apenas enquanto o trecho de código desta função estiver sendo executado.
+
+Os trechos do código-fonte estão associados univocamente a regiões de memória alocadas (medida em termos de bytes) pelo sistema operacional como uma estrutura de dados pilha (pense numa pilha de pratos) quando da execução do programa.  Esta pilha de bytes de memória está organizada de baixo para cima em cinco grandes segmentos: text, initialized data, uninitialized data, heap e stack.  Ou seja, o text é o "prato" mais no fundo da pilha e o stack é o prato mais no topo.
+
+O segmento text armazena o próprio executável do programa. O segmento initialized data guarda os dados inicializados pelo programador no escopo global ou como estáticos, isto é, dados com valores fixados antes da execução e que não mudarão de valor durante toda a execução do programa.  Já o uninitialized data é uma área reservada a dados não inicializados pelo programador.  O heap é o segmento de memória que será alocado durante a execução do programa (alocação dinâmica de memória) e o stack guarda os dados que estão armazenados no trecho de escopo local do código-fonte.
+
+A gestão de memória é manual, cabendo ao programador garantir que os dados que serão lidos caibam dentro da quantidade de memória alocada para eles pelo sistema.  Por isso, cada tipo de dado tem uma quantidade de dados pré-determinada.  Caso um dado ultrapasse a quantidade de memória disponível para ele será gerado um tipo de erro inesperado conhecido como "undefined behavior", que é um erro catastrófico no programa.  Um tipo de erro que provoca undefined behavior é o famigerado "stack overflow", que ocorre quando a quantidade de dados colocada no stack é maior do que caberia nele.
+
+Quanto às implementações da linguagem C, elas existem para praticamente qualquer plataforma de computação desde os menores microcontroladores até os grandes supercomputadores.  Há inclusive implementações que emitem código para executáveis que rodam diretamente no hardware sem a necessidade de um sistema operacional! Normalmente, a implementação de C é feita por meio de um compilador, porque originalmente a linguagem foi criada para desenvolvimento do sistema operacional Unix, mas existem interpretadores experimentais para C. Aqui utilizaremos para exemplificar nossos códigos o compilador C fornecido pelo Projeto GNU que é conhecido com GCC. 
+
+# Definição formal
 A linguagem é definida como formada por:
 
 1. elementos preliminares;
@@ -19,7 +31,7 @@ contendo preferencialmente por caracteres ASCII, embora haja
 suporte para caracteres UTF-8 no padrão mais recente para os sistemas
 operacionais de computadores pessoais.
 
-Os arquivos-fonte podem terão a extensão *.C* e os arquivos cabeçalhos terão extensão *.h*.
+Os arquivos-fonte terão a extensão *.C* e os arquivos cabeçalhos terão extensão *.h*.
 
 Os seguintes duplas de caracteres, denominadas sequências de escape estão
 disponíveis para controlar o local de impressão dos caracteres:
@@ -52,7 +64,7 @@ int main(void){
 
 }
 ```
-Ou alternativamente a função *main* pode ser definida desta outra forma:
+Preferivelmente, porém, a função *main* pode ser definida desta outra forma:
 
 ```c
 int main(int argc, char *argv[]){
