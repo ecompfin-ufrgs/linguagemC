@@ -32,7 +32,7 @@ compiladas AOT e a linguagem Python, em particular, na sua implementação de
 referência é especialmente lenta. 
 
 Python, porém, foi desenhada para atuar como linguagem de integração de sistemas
-desenvolvidos em C.  Por conseguinte, tem em sua especifricação uma interface de
+desenvolvidos em C.  Por conseguinte, tem em sua especificação uma interface de
 programação deaplicações escritas em C altamente desenvolvida e de fácil
 utilização.
 
