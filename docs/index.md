@@ -1,9 +1,6 @@
-# Benvindo!
+# Introdução à Linguagem C para Programadores Python com Foco em Ciência de Dados e Computacional.
 
-Esta é a página do Minicurso de Introdução à Linguagem C para Programadores
-Python com Foco em Ciência de Dados e Computacional.
-
-O sumário do curso vai a seguir:
+O sumário deste site vai a seguir:
 
 1. [Características da linguagem](caracteristicasLInguagemC.md)
 2. [Modelo de execução](modeloExecucao)
