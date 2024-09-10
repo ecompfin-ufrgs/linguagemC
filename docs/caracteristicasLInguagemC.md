@@ -2,7 +2,11 @@
 
 ## Código-fonte, escopo, gestão de memória e implementações
 
-C é uma linguagem de programação que dá suporte exclusivamente ao paradigma procedural.  Seu código-fonte deve ser inserido em um arquivo de texto do sistema operacional onde o programa é escrito com extensão .C. Por exemplo, um programa com nome "hello" teria o arquivo de código-fonte nomeado "hello.c". O código-fonte é dividido em trechos denominados de trecho de *escopo global* e trecho de *escopo local*.
+A linguagem C foi criada na década de 1970 para implementar o sistema operacional UNIX. Por esse motivo, trata-se de uma linguagem tão simples que sequer conta com mecanismos de entrada e saída de dados em sua especificação, deixando isso para sua biblioteca-padrão o que facilita a implementação em diversos ambientes, desde dispositivos embarcados até supercomputadores, passando, naturalmente, por computadores pessoais.
+
+Esta facilidade de implementação propiciou ao surgimento de diversos compiladores capazes de produzir código-objeto altamente otimizado e, consequentemente, a linguagem passou a ser muito usada quando se necessita de programas ou bibliotecas de código de alto desempenho.
+
+Nesse mesmo sentido de simplicidade e facilidade, C é uma linguagem de programação que dá suporte exclusivamente ao paradigma procedural.  Seu código-fonte deve ser inserido em um arquivo de texto do sistema operacional onde o programa é escrito com extensão .C. Por exemplo, um programa com nome "hello" teria o arquivo de código-fonte nomeado "hello.c". O código-fonte é dividido em trechos denominados de trecho de *escopo global* e trecho de *escopo local*.
 
 O trecho de escopo global é escrito externamente à qualquer função ou procedimento, manipulando os objetos da linguagem que serão armazenados em memória durante todo o tempo de execução do programa, devendo ser incluído anteriormente à definição de qualquer função.
 
