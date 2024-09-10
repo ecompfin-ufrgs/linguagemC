@@ -85,6 +85,8 @@ Entre os arquivos-fontes, um deles deverá conter uma função denominada *main*
 com retorno inteiro igual a zero definida como segue:
 
 ```c
+#include <stdio.h>
+
 int main(void){
 
 /* comandos */
