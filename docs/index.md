@@ -4,8 +4,8 @@ O sumário deste site vai a seguir:
 
 1. [Características da linguagem](caracteristicasLInguagemC.md)
 2. [Léxico](lexico.md)
-3. [Modelo de execução](modeloExecucao)
-4. [Modelo de dados](modeloDados.md)
+3. [Modelo de dados](modeloDados.md)
+4. [Modelo de execução](modeloExecucao)
 5. [Operações de entrada e saída](io.md)
 6. [O compilador GCC](compiladorGCC.md)
 7. [Exercícios básicos](exercicios1.md)
