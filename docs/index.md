@@ -5,7 +5,7 @@ Python com Foco em Ciência de Dados e Computacional.
 
 O sumário do curso vai a seguir:
 
-1. [Características da linguagem](caracteristicasLInguagem.md)
+1. [Características da linguagem](caracteristicasLInguagemC.md)
 2. [C e a computação científica](CsciComp.md)
 3. [Modelo de execução](modeloExecucao)
 4. [Modelo de dados](modeloDados.md)
