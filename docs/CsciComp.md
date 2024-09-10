@@ -1,4 +1,4 @@
-# Introdução à linguagem C
+# C e a computação científica
 
 A linguagem C é muito usada quando se necessita de
 programas ou bibliotecas de código de alto desempenho.
