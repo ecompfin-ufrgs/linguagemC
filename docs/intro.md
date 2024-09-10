@@ -1,14 +1,6 @@
 # Introdução à linguagem C
 
-A linguagem C foi criada na década de 1970 para implementar o sistema
-operacional UNIX.  Por esse motivo, trata-se de uma linguagem simples, 
-facilitando a sua implementação em diversos ambientes, desde dispositivos
-embarcados até supercomputadores, passando, naturalmente, por computadores
-pessoais.
-
-Esta facilidade de implementação propiciou ao surgimento de diversos
-compiladores capazes de produzir código-objeto altamente otimizado e,
-consequentemente, a linguagem passou a ser muito usada quando se necessita de
+A linguagem C é muito usada quando se necessita de
 programas ou bibliotecas de código de alto desempenho.
 
 Ora, os algoritmos usados em computação científica quer seja ciência
