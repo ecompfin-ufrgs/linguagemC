@@ -7,9 +7,9 @@ A referência básica que seguimos aqui é o [Manual da Linguagem C99](https://w
 O sumário deste site vai a seguir:
 
 1. [Características da linguagem](caracteristicasLInguagemC.md)
-2. [Léxico](lexico.md)
-3. [Modelo de dados](modeloDados.md)
-4. [Modelo de execução](modeloExecucao.md)
+2. [Léxico básico](lexico.md)
+3. [Semântica dos dados](modeloDados.md)
+4. [Semântica da execução](modeloExecucao.md)
 5. [Operações de entrada e saída](io.md)
 6. [O compilador GCC](compiladorGCC.md)
 7. [Exercícios básicos](exercicios1.md)
