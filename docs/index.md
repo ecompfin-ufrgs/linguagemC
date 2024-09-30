@@ -4,6 +4,9 @@ Este site apresenta o básico da linguagem C com o fim de facilitar o entendimen
 
 A referência básica que seguimos aqui é o [Manual da Linguagem C99](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf), mas utilizamos apenas os construtos do subconjunto da linguagem C89 na forma como ela é implementado pelo compilador [GCC](https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Standards.html#C-Language).
 
+Para a parte prática, usamos também os seguintes tutoriais:
+- 
+
 O sumário deste site vai a seguir:
 
 1. [Características da linguagem](caracteristicasLInguagemC.md)
@@ -14,10 +17,11 @@ O sumário deste site vai a seguir:
 6. [Operações de entrada e saída](io.md)
 7. [O compilador GCC](compiladorGCC.md)
 8. [Estrutura de controle sequencial](sequencia.md)
-9. [Estruturas de controle de iteração](iteracao.md)
-10. [Estruturas de controle de seleção](selecao.md)
-11. [Funções](funcoes.md)
-12. [Programação modular](progModular)
-14. [Criando novos tipos: struct](struct.md)
-15. [Criando novos tipos: union](union.md)
+9. [Estrutura de dados: array]()
+10. [Estruturas de controle de iteração](iteracao.md)
+11. [Estruturas de controle de seleção](selecao.md)
+12. [Funções](funcoes.md)
+13. [Programação modular](progModular)
+14. [Criando novos tipos de dados I: struct](struct.md)
+15. [Criando novos tipos de dados II: union](union.md)
 16. [Alocação dinâmica de memória](ponteiros.md)
