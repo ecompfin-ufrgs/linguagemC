@@ -1,4 +1,4 @@
-# Modelo de Execução
+# Semântica de  Execução
 
 A execução do programa se inicia pela função *main* e depois é realizada
 sequencialmente ou por chamadas a outras funções que podem ou não serem
