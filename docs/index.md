@@ -23,6 +23,5 @@ O sumário deste site vai a seguir:
 11. [Estruturas de controle de seleção](selecao.md)
 12. [Funções](funcoes.md)
 13. [Programação modular](progModular)
-14. [Criando novos tipos de dados I: struct](struct.md)
-15. [Criando novos tipos de dados II: union](union.md)
+14. [Criação de novos tipos de dados](criacaoNovosTipos.md)
 16. [Alocação dinâmica de memória](ponteiros.md)
