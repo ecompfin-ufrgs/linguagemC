@@ -25,5 +25,8 @@ terminada pelo *;*.
 Além dos caracteres mencionados acima, também são especialmente importantes os que seguem:
 
 Comentário de linha única - //
-Comentário de múltiplas linhas - /*Isto é um comentário*/
+
+Comentário de múltiplas linhas - /* Isto é um comentário que pode ser estender
+por múltiplas linhas */
+
 Separadores de algarismos em números grandes: Exemplo: 1_000_000
