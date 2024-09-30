@@ -25,3 +25,4 @@ O sumário deste site vai a seguir:
 13. [Programação modular](progModular)
 14. [Criação de novos tipos de dados](criacaoNovosTipos.md)
 16. [Alocação dinâmica de memória](ponteiros.md)
+17. [Manipulação de arquivos](arquivos.md)
