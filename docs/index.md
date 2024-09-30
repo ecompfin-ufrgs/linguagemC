@@ -4,8 +4,8 @@ Este site apresenta o básico da linguagem C com o fim de facilitar o entendimen
 
 A referência básica que seguimos aqui é o [Manual da Linguagem C99](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf), mas utilizamos apenas os construtos do subconjunto da linguagem C89 na forma como ela é implementado pelo compilador [GCC](https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Standards.html#C-Language). Para a parte prática, usamos em particular o tutorial do [Programiz](https://www.programiz.com/c-programming) e, adicionalmente, também os elencados abaixo:
 - [Geeks for Geeks](https://www.geeksforgeeks.org/c-programming-language/)
-- [Learn C](https://www.learn-c.org/)
 - [Tutorialspoint](https://www.tutorialspoint.com/cprogramming/index.htm)
+- [Learn C](https://www.learn-c.org/)
 
 O sumário deste site vai a seguir:
 
